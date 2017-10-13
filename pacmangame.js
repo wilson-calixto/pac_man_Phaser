@@ -21,4 +21,46 @@ var PacmanGame = function (game) {
     this.safetile = 14;
     this.gridsize = 16;       
     this.threshold = 3;
+     //var music;
+
+    this.SPECIAL_TILES = [
+        { x: 12, y: 11 },
+        { x: 15, y: 11 },
+        { x: 12, y: 23 },
+        { x: 15, y: 23 }
+    ];
     
+    this.TIME_MODES = [
+        {
+            mode: "scatter",
+            time: 7000
+        },
+        {
+            mode: "chase",
+            time: 20000
+        },
+        {
+            mode: "scatter",
+            time: 7000
+        },
+        {
+            mode: "chase",
+            time: 20000
+        },
+        {
+            mode: "scatter",
+            time: 5000
+        },
+        {
+            mode: "chase",
+            time: 20000
+        },
+        {
+            mode: "scatter",
+            time: 5000
+        },
+        {
+            mode: "chase",
+            time: -1 // -1 = infinite
+        }
+    ];
